@@ -1,6 +1,6 @@
 const tokens = await fetch("https://raw.githubusercontent.com/anuser88/Scratch-views-gen/main/random_tokens.txt")
 	.then(res => res.text())
-	.then(text.split(/\r?\n/));
+	.then(t=>t.split(/\r?\n/));
 
 function generateViews(username, projectId, tokens) {
 	function inLoop(username, projectId, tokens) {
